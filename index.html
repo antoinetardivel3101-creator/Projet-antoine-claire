@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Claire Cheriez - Sophrologue Certifiée</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Lato', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            colors: {
+              // Palette mise à jour : Textes plus foncés pour le contraste
+              primary: {
+                50: '#F2F7F5',
+                100: '#E3EFE9',
+                200: '#C1DBCF',
+                300: '#9EC7B5',
+                400: '#6B8F78', // Un peu plus foncé pour la lisibilité sur blanc
+                500: '#52705E',
+                600: '#3D5246',
+                700: '#2A3830',
+              },
+              sand: {
+                50: '#F9F7F2', // Beige un peu plus soutenu pour le fond
+                100: '#F2EFE6',
+                200: '#E6E0D0',
+                300: '#D6CDB8',
+                400: '#C4B79A',
+              },
+              text: {
+                main: '#1A1A1A', // Presque noir pour le texte principal (au lieu de #4A4A4A)
+                light: '#424242', // Gris foncé pour les sous-titres (au lieu de #757575)
+                muted: '#616161', // Pour les textes moins importants, mais lisibles
+              }
+            },
+            boxShadow: {
+              'soft': '0 10px 40px -10px rgba(82, 112, 94, 0.15)',
+              'card': '0 4px 20px -2px rgba(0, 0, 0, 0.08)',
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+              'fade-in': 'fadeIn 0.5s ease-out forwards',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .text-balance { text-wrap: balance; }
+      body { background-color: #F9F7F2; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-sand-50 text-text-main antialiased selection:bg-primary-200 selection:text-primary-700">
+    <div id="root"></div>
+  </body>
+</html>
